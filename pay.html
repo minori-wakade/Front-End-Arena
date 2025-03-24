@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="paystyle.css" />
+  <script src="payscript.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><img src="nav_logo.jpg"></div>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+        <!--<ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="moodtracker.html">Mood Tracker</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>-->
+    </nav>
+    
+  <div class="container">
+    
+    <h1 class="title">Checkout</h1>
+
+  <!-- Order Summary -->
+<div class="order-summary">
+    <button class="summary-btn" onclick="toggleSummary()">
+      Order Summary <span id="arrow">▼</span>
+    </button>
+    <div id="summary" class="summary-content">
+      <div class="details">
+        <div class="image-text-container">
+          <img class="img" src="greenheadphone.jpg" alt="SoundWave Pro X7" />
+          <div class="text-details">
+            <h4>SoundWave Pro X7</h4>
+            <p>
+              <span class="new-price">₹6999.99</span>
+              <button class="save-btn" disabled>Save 12%</button>
+              <span class="new-price">Quantity: 1</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="image-text-container">
+          <img class="img" src="whiteearbuds.jpg" alt="Pulse Pods Z3" />
+          <div class="text-details">
+            <h4>Pulse Pods Z3</h4>
+            <p>
+              <span class="new-price">₹8999.99</span>
+              <button class="save-btn" disabled>Save 18%</button>
+              <span class="new-price">Quantity: 1</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<br><br><br>
+    <!-- Payment Options -->
+    <div class="payment-section">
+        <h3>Select Mode of Payment</h3><br>
+        <div class="payment-options">
+          <div class="payment-option" onclick="selectPaymentMode('UPI')">
+            <img class="image" src="upi.jpg" alt="UPI" class="payment-icon">
+            <span>UPI</span>
+          </div>
+          <div class="payment-option" onclick="selectPaymentMode('Debit/Credit Card')">
+            <img class="image" src="card.jpg" alt="Debit/Credit Card" class="payment-icon">
+            <span>Debit/Credit Card</span>
+          </div>
+          <div class="payment-option" onclick="selectPaymentMode('Net Banking')">
+            <img class="image" src="bank.jpg" alt="Net Banking" class="payment-icon">
+            <span>Net Banking</span>
+          </div>
+          <div class="payment-option" onclick="selectPaymentMode('COD')">
+            <img class="image" src="cod.jpg" alt="COD" class="payment-icon">
+            <span>COD</span>
+          </div>
+        </div>
+        <button class="confirm-payment-btn" onclick="confirmPayment()">Confirm Payment</button>
+      </div>
+      
+      <!-- Popup -->
+      <div id="popup" class="popup hidden">
+        <div class="popup-content">
+          <h2>Order Confirmed!</h2>
+          <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <footer>
+    <div class="footercontainer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Earbuds</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AudioTech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
