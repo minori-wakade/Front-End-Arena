@@ -323,7 +323,10 @@ body {
     border-radius: 8px;
     cursor: pointer;
   }
-  
+  .confirm-payment-btn a{
+    text-decoration: none;
+    color: #000;
+  }
   /* Popup */
   .popup {
     position: fixed;

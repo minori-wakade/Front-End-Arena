@@ -11,19 +11,23 @@
     <link rel="stylesheet" href="category2.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-brand"><img src="nav_logo.png"></div>
-        <button class="nav-toggle" id="navToggle">&#9776;</button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="moodtracker.html">Mood Tracker</a></li>
-            <li><a href="journal.html">Journal</a></li>
-            <li><a href="Quiz.html">Quiz</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="Resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="nav-brand"><img src="nav_logo.png"></div>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Category</a>
+            <ul class="dropdown-content">
+                <li><a href="category1.html">Headphones</a></li>
+                <li><a href="category2.html">Earbuds</a></li>
+                <li><a href="category3.html">Speakers</a></li>
+                <li><a href="category4.html">Neck Band</a></li>
+            </ul>
+        </li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
     <main>
     <!-- Search Section -->
     <div class="search">
@@ -56,7 +60,7 @@
                 </div>                
     
                 <!-- Add to Cart Button -->
-                <button class="cart-btn">View Product</button>
+                <button class="cart-btn"><a href="earphonepage.html">View Product</a></button>
             </div>
         </div>
         <div class="product-card">
