@@ -327,6 +327,11 @@ body {
     text-decoration: none;
     color: #000;
   }
+  .back-link{
+    margin-left: 5rem;
+    text-decoration: none;
+    color: white;
+  }
   /* Popup */
   .popup {
     position: fixed;
@@ -443,6 +448,31 @@ body {
   .confirm-payment-btn:hover {
     background: linear-gradient(to right, #f87171, #fdba74, #fcd34d);
   }
+  /* Default styles for larger screens */
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-option {
+  flex: 1;
+  text-align: center;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .payment-options {
+    display: block; /* Stack the payment options vertically */
+    gap: 15px; /* Space between the options */
+  }
+
+  .payment-option {
+    width: 100%; /* Make the payment option take up full width */
+    text-align: center;
+  }
+}
   footer {
     background-color: #222;
     color: #fff;
